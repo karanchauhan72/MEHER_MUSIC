@@ -6,12 +6,11 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
-BOT_TOKEN = getenv("BOT_TOKEN")
+API_ID = int(getenv("API_ID", "20366712"))
+API_HASH = getenv("API_HASH", "a05398c005f6381009a9bb5d55118842")
+BOT_TOKEN = getenv("BOT_TOKEN", "8617005297:AAFBgsgHX-ABFhNmT-FungWh-T1k6pXj8QE")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
-
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://mehermusic369_db_user:mehermusic@cluster0.t7miuqv.mongodb.net/?appName=Cluster0")
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 10000))
 
 LOGGER_ID = int(getenv("LOGGER_ID", "-100381157409"))
@@ -37,7 +36,7 @@ PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", 25))
 TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", 104857600))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BQE2xXgASfgU7AmhxXfyH7UMlXEiI3jVQAREyoWYeuQ9B2FDjGonu60MU0d-SdNcFYn4IflyMjCcqQCUNvJS2mOMnIEWwcaQFVjfHrm9YGcE65aI_moWhbKWECxfVqGhkPfIpbhalz_iTzcOYf1US2H3uaIKUspzd_laD2ttboA4LDCXqYcz_EJ00aMLbpeHE6YbSyIlkxiF9JTXviTvNdPh21ky2WpXy53OVc4PmiJtb3j1DOAqnpWj66WG83cF3Ib41MxNioJSjLvTukYZxAcFFXTJ2ug4PERtURYz9AxSHaPhOIr9uxZA-VSG884W9LN3VGu1TtXO-afZ2J34Li9nFos3HAAAAAH76MrBAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
